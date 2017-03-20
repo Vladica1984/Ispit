@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_ime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Ime"
+        android:ems="10"
+        android:id="@+id/et_ime"
+        android:hint="Ime"
+        android:layout_below="@id/tv_ime" />
+
+    <TextView
+        android:text="prezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_prezime"
+        android:layout_below="@id/et_ime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Prezime"
+        android:ems="10"
+        android:id="@+id/et_prezime"
+        android:hint="Prezime"
+        android:layout_below="@id/tv_prezime" />
+
+    <TextView
+        android:text="Adresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_adresa"
+        android:layout_below="@id/et_prezime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Adresa"
+        android:ems="10"
+        android:id="@+id/et_adresa"
+        android:layout_below="@id/tv_adresa"
+        android:hint="Adresa" />
+</RelativeLayout>
