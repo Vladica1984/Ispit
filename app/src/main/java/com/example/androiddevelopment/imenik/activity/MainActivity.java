@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         final ListView listView = (ListView) findViewById(R.id.lv_listaKontakata);
 
         try {
-            List<Kontakt> list = getDatabaseHelper().getKontaktDao().queryForAll();
+            List<Kontakt> list = getDatabaseHelper().getmKontaktDao().queryForAll();
             ListAdapter adapter = new ArrayAdapter<>(MainActivity.this, R.layout.list_item, list);
             listView.setAdapter(adapter);
 
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                         k.setAdresa(adresa.getText().toString());
 
                         try {
-                            getDatabaseHelper().getKontaktDao().create(k);
+                            getDatabaseHelper().getmKontaktDao().create(k);
                             showMessage("Kontakt dodat u imenik");
                             refresh();
                         } catch (SQLException e) {
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
             if (adapter != null) {
                 try {
                     adapter.clear();
-                    List<Kontakt> list = getDatabaseHelper().getGlumciDao().queryForAll();
+                    List<Kontakt> list = getDatabaseHelper().getmKontaktDao().queryForAll();
                     adapter.addAll(list);
                     adapter.notifyDataSetChanged();
                 } catch (SQLException e) {

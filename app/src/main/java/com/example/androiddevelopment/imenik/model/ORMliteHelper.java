@@ -47,7 +47,7 @@ public class ORMliteHelper extends OrmLiteSqliteOpenHelper {
         }
     }
 
-    public Dao<Imenik, Integer> getFilmoviDao() throws SQLException {
+    public Dao<Imenik, Integer> getmImenikDao() throws SQLException {
         if(mImenikDao == null) {
             mImenikDao = getDao(Imenik.class);
         }
@@ -55,7 +55,7 @@ public class ORMliteHelper extends OrmLiteSqliteOpenHelper {
         return mImenikDao;
     }
 
-    public Dao<Kontakt, Integer> getGlumciDao() throws SQLException {
+    public Dao<Kontakt, Integer> getmKontaktDao() throws SQLException {
         if(mKontaktDao == null) {
             mKontaktDao = getDao(Kontakt.class);
         }
